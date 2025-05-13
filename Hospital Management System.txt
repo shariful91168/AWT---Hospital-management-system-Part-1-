@@ -1,0 +1,109 @@
+1.CODE
+
+Run:        npm run start
+
+Close:      control+c
+
+
+2.TOKEN
+
+Authorization
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp
+
+
+3.IP LINK
+
+http://localhost:3000/auth/register
+
+http://localhost:3000/auth/login
+
+http://localhost:3000/pharmacist/medicines
+
+
+4.DATABASE 
+
+SELECT * FROM public."user"
+
+
+SELECT * FROM public.medicine
+
+
+
+5.REGISTATION
+
+POST
+
+http://localhost:3000/auth/register
+
+{
+  "email": "sam21@gmail.com",
+  "username": "sam",
+  "password": "21457013",
+  "role": "pharmacist"
+}
+
+
+6.Login
+
+POST
+
+http://localhost:3000/auth/login
+
+
+{
+  "email": "sam21@gmail.com",
+  "password": "21457013"
+}
+
+
+7.DATA ANTRY
+
+POST
+
+http://localhost:3000/pharmacist/medicines
+
+
+
+{
+  "name": "Tafnil",
+  "manufacturer": "SMC Pharma",
+  "stock": 500,
+  "price": 1.5
+}
+
+
+8.ALL LIST SEE
+
+GET
+
+http://localhost:3000/pharmacist/medicines
+
+
+NULL
+
+
+9.UPDATE DATA
+
+PATCH
+
+http://localhost:3000/pharmacist/medicines/4
+
+{
+  "stock": 550,
+  "price": 2.0
+}
+
+
+10.DELEDE DATA
+
+DELETE
+
+http://localhost:3000/pharmacist/medicines/6
+
+
+11.SEE ALL DATA
+
+GET
+
+http://localhost:3000/pharmacist/medicines
